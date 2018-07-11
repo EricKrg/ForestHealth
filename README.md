@@ -18,3 +18,7 @@ This package consists of useful function to prepare NDVI data for ml and ensures
 - fh_NDVI_DF (construct a formatted data table, base und raster::extract or fh_stat_extract)
 - fh_stat_extract (apply simpel stat. fun on raster::extract result)
 - *fh_time_series (create a time series from a df with date stamps as cols - unfinshed)*
+
+### Example Flow
+
+![App deck](./preprocess_flow.png)

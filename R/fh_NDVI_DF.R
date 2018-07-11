@@ -8,9 +8,15 @@
 #' @param layernames - vector of Layernames which are set a colnames, need to be ordered
 #' @param transform_ndvi - if TRUE the NDVI values are transfromed like: (x- 10000)/10000
 #' @details
-#' thisfunction  returns a formatted ndvi df (data table)
+#' this function  returns a formatted ndvi df (data table)
 #' inlist is the output of mean_extract() or result of a raster::extract job (if poly centroids were used)
 #' layernames is a vector with the columnnames (date stamps) of the new ndvi dt
+#' @examples
+#' \dontrun{
+#' test_list <- readRDS("inst/data/test_list.RDS")
+#' test_layer_list <- fh_stat_extract(test_list, "mean", na.rm = T)
+#' fh_NDVI_DF(test_layer_list,layernames = c(1:24),transform_ndvi = F)
+#' }
 #' @export
 
 fh_NDVI_DF <- function(inlist, layernames, transform_ndvi){

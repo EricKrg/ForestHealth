@@ -7,13 +7,13 @@ This package consists of useful function to prepare NDVI data for ml and ensures
 
 ### raster only
 
-- fh_writerowWise
-- fh_parallel_extract
-- fh_parallel_mask
-- fh_raster_transform
+- fh_writerowWise (write raster with low RAM usage)
+- fh_parallel_extract (efficient extracting)
+- fh_parallel_mask (efficient masking)
+- fh_raster_transform (transfrom pixel value for layer and each cell)
 
 ### non raster
 
-- fh_date_cols
-- fh_NDVI_DF
-- fh_stat_extract
+- fh_date_cols (select date stamp of df)
+- fh_NDVI_DF (construct a formatted data table, base und raster::extract or fh_stat_extract)
+- fh_stat_extract (apply simpel stat. fun on raster::extract result)

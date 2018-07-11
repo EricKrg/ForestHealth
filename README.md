@@ -1,6 +1,6 @@
 # ForestHealth
 
-This repo holds the ForestHealth package which works togther with the ml_forest-health repository. 
+This repo holds the ForestHealth package which works together with the ml_forest-health repository. 
 This package consists of useful function to prepare NDVI data for ml and ensures structure and reproducibility for the ml_forest-health repo.
 
 ## functions
